@@ -21,7 +21,10 @@
 (package! org-brain)  ; Wiki/mind-map combo
 (package! company-jedi)  ; Python auto-completion
 (package! elpy)  ; The "emacs python IDE"
-
+(package! function-args) ; Better cpp function args autocomplete (not in minibuffer)
+                         ; TODO: consider removing if unnecessary.
+                         ; TODO: note: lsp-ui might make this unnecessary
+(package! lsp-ui) ; Allows for in-window docs info (connects to lsp server)
 
 
 ;; To install a package directly from a particular repo, you'll need to specify

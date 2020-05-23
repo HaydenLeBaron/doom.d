@@ -7,7 +7,7 @@
 ;; Some functionality uses this to identify you, e.g. GPG configuration, email
 ;; clients, file templates and snippets.
 (setq user-full-name "Hayden LeBaron"
-      user-mail-address "hlebaron98@gmail.com.com")
+      user-mail-address "hlebaron98@gmail.com")
 
 ;; Doom exposes five (optional) variables for controlling fonts in Doom. Here
 ;; are the three important ones:
@@ -23,8 +23,18 @@
 
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
-;; `load-theme' function. This is the default:
-(setq doom-theme 'doom-one)
+;; `load-theme' function.
+;(setq doom-theme 'doom-one)
+(setq doom-theme 'doom-nova)
+
+;* Favorite themes:
+;** doom-henna ;; Only problem is that the comment font is too dark
+;** doom-material
+;** doom-nord ;; similar to nova but with black bars
+;** doom-nova ;; most functional. Looks like its from the 90's too
+;** doom-horizon ;; cool blue background
+;** doom-laserwave ;; Feels like blade runner / cyberpunk
+
 
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
@@ -59,3 +69,6 @@
       org-gcal-client-secret "nM0nWHmdxZ2R6Qjoa6G33q7q"
       org-gcal-file-alist '(("hlebaron98@gmail.com" .  "~org/gcalendar.org")))
                            ;;("another-mail@gmail.com" .  "~/sk.org")))
+
+
+(fa-config-default) ; open up function-args-mode by default
