@@ -25,6 +25,7 @@
                          ; TODO: consider removing if unnecessary.
                          ; TODO: note: lsp-ui might make this unnecessary
 (package! lsp-ui) ; Allows for in-window docs info (connects to lsp server)
+;;(package! clang-format) ; Code-prettification tool (THIS WAS BREAKING THINGS)
 
 
 ;; To install a package directly from a particular repo, you'll need to specify
